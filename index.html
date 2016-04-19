@@ -9,12 +9,13 @@
   <div class="header-up">
     <div class="container clearfix">
       <div class="logo-block">
-        <h2 class="logo">Техномарт</h2>
+        <h1 class="logo">Техномарт</h1>
       </div>
-      <form action="#" method="GET">
-        <input class="search-text" type="search" id="search-item">
-        <label for="search-item">Поиск:</label>
-      </form>
+      <div class="search-form">
+        <form action="#" method="GET">
+          <input class="search-text" name="search" type="search" id="search-item" placeholder="Поиск:">
+        </form>
+      </div>
       <div class="order-block">
         <ul class="order-block-list">
           <li class="order-list-item bookmark"><a href="#">Закладки</a></li>
@@ -26,7 +27,7 @@
   </div><!--end header-up-->
   <div class="main-info">
     <div class="container clearfix">
-      <h1 class="main-heading"> Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h2 class="main-heading"> Интернет-магазин строительных материалов и инструментов для ремонта</h2>
       <div class="address">
         <p class="phone-number">+7-495-555-05-55</p>
         <p class="adress-text">г. Санкт-Петербург, ул. Б. Конюшенная, 19/18</p>
@@ -51,8 +52,10 @@
     </div><!--end container-->
   </div>
 </header>
+
 <div class="main-content">
   <div class="container">
+
     <div class="promo-container clearfix">
       <div class="promo-block materials">
         <h3 class="promo-heading">Материалы</h3>
@@ -97,113 +100,123 @@
           <h3 class="promo-heading">Доставка</h3>
           <a class="promo-btn delivery-btn" href="#">Бесплатно</a>
         </div>
+        </div><!--end slider-->
       </div><!--end promo-container-->
-      <div class="pop-blocks">
-        <div class="pop-catalog-items clearfix">
+
+      <div class="pop-block1">
+        <div class="pop-block-header">
           <h2 class="pop-text">Популярные товары</h2>
           <a class="btn pop-btn" href="#">Все популярные товары</a>
+        </div><!--end pop-block-header-->
+        <div class="pop-catalog-items">
           <div class="catalog-item">
+            <img class="catalog-image" src="" alt="">
+            <h3 class="catalog-item-heading">Перфоратор BOSCH BFG 9000</h3>
+            <div class="price-buttons">
+              <span class="old-price">32 500 P.</span>
+              <a class="current-price" href="#">25 000 P.</a>
+            </div>
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="catalog-item-image">
-              <img width="" height="" src="" alt="Перфоратор BOSCH BFG 9000">
-            </div>
-            <h2 class="title">Перфоратор BOSCH BFG 9000</h2>
-            <div class="discount">32 500 Р.</div>
-            <div class="price">25 500 Р.</div>
           </div><!--end catalog-item-->
           <div class="catalog-item">
+            <img class="catalog-image" src="" alt="">
+            <h3 class="catalog-item-heading">Перфоратор BOSCH BFG 3000</h3>
+            <div class="price-buttons">
+              <span class="old-price">22 500 P.</span>
+              <a class="current-price" href="#">15 000 P.</a>
+            </div>
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="catalog-item-image">
-              <img width="" height="" src="" alt="Перфоратор BOSCH BFG 3000">
-            </div>
-            <h2 class="title">Перфоратор BOSCH BFG 3000</h2>
-            <div class="discount">22 500 Р.</div>
-            <div class="price">15 500 Р.</div>
           </div><!--end catalog-item-->
           <div class="catalog-item">
+            <img class="catalog-image" src="" alt="">
+            <h3 class="catalog-item-heading">Перфоратор BOSCH BFG 6000</h3>
+            <div class="price-buttons">
+              <span class="old-price">30 500 P.</span>
+              <a class="current-price" href="#">25 500 P.</a>
+            </div>
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="catalog-item-image">
-              <img width="" height="" src="" alt="Перфоратор BOSCH BFG 6000">
-            </div>
-            <h2 class="title">Перфоратор BOSCH BFG 6000</h2>
-            <div class="discount">30 500 Р.</div>
-            <div class="price">25 500 Р.</div>
           </div><!--end catalog-item-->
-          <div class="catalog-item new">
+          <div class="catalog-item">
+            <img class="catalog-image new" src="" alt="">
+            <h3 class="catalog-item-heading">Перфоратор BOSCH BFG 2000</h3>
+            <div class="price-buttons">
+              <a class="current-price" href="#">12 500 P.</a>
+            </div>
             <div class="actions">
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="catalog-item-image">
-              <img width="" height="" src="" alt="Перфоратор BOSCH BFG 2000">
-            </div>
-            <h2 class="title">Перфоратор BOSCH BFG 2000</h2>
-            <div class="price">12 500 Р.</div>
           </div><!--end catalog-item-->
         </div><!--end pop-catalog-items-->
-        <div class="pop-catalog-items clearfix">
-          <h2 class="pop-text">Популярные производители</h2>
-          <a class="btn pop-btn" href="#">Все популярные производители</a>
-          <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+      </div><!--end pop-block1-->
+        <div class="pop-block2">
+          <div class="pop-block-header">
+            <h2 class="pop-text">Популярные производители</h2>
+            <a class="btn pop-btn" href="#">Все производители</a>
+          </div><!--end pop-block-header-->
+          <div class="pop-catalog-items">
+            <div class="pop-item">
+             <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
+           </div>
+           <div class="pop-item">
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
           <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
           <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
           <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
           <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
           <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
           <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
+            <a class="firm-item" href="#"><img class="firm-img" src="" alt=""></a>
           </div>
-          <div class="pop-item">
-            <a href=""><img class="firm" src="" alt=""></a>
-          </div>
-        </div><!--end pop-catalog-items-->
-      </div><!--end pop-blocks-->
-    </div> <!--end promo-container-->
+          </div><!--end pop-catalog-items-->
+        </div><!--end pop-block2-->
+
   </div><!--end container-->
-  <div class="service-block clearfix">
-    <div class="service-block-container">
+
+  <div class="service-block">
+    <div class="container">
       <div class="our-service">
         <h3 class="services-heading">Сервисы</h3>
         <p class="our-service-text">
           Хороший интернет-магазин отличается от плохого не только ценами!
         </p>
       </div>
-      <div class="service-slides">
+      <div class="service-list">
         <ul class="service-list"><!--то есть это не список, а инпуты с типом сабмит?-->
           <li class="service-list-item active">Доставка</li>
           <li class="service-list-item"><a href="#">Гарантия</a></li>
           <li class="service-list-item"><a href="#">Кредит</a></li>
         </ul>
-        <div class="service-slide">
+      </div>
+      <div class="service-slides">
+        <div class="service-slide delivery">
           <h3 class="service-slide-heading">Доставка</h3>
           <p class="service-slide-text">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж!
           </p>
-          <img class="service-slide-image" src="" alt="">
         </div><!--end service-slide-->
-        <div class="service-slide">
+        <div class="service-slide guaranty">
           <h3 class="service-slide-heading">Гарантия</h3>
           <p class="service-slide-text">
             Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его
@@ -211,21 +224,19 @@
             вы всегда можете быть уверенными в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите
             как-нибудь сами.
           </p>
-          <img class="service-slide-image" src="" alt="">
         </div>
-        <div class="service-slide">
+        <div class="service-slide credit">
           <h3 class="service-slide-heading">Кредит</h3>
           <p class="service-slide-text">
             Залезть в долговую яму стало проще. Кредитные консультанты придут к вам на помощь.
           </p>
           <a class="btn-slide" href="">Отправить заявку</a>
-          <img class="service-slide-image" src="" alt="">
         </div>
       </div><!--end service-slides-->
-    </div><!--end service-block-container-->
+    </div><!--end container-->
   </div><!--end service-block-->
-  <div class="about-us clearfix">
-    <div class="container">
+  <div class="about-us">
+    <div class="container clearfix">
       <div class="features">
         <h2 class="features-heading">Компания "Техномарт"</h2>
         <p class="features-text">
@@ -252,35 +263,35 @@
         <a class="btn contacts-btn" href="#">Заблудились? Напишите нам!</a>
       </div>
     </div><!--end container-->
-  </div>
+  </div><!--end about-us-->
 </div><!--end main-content-->
 <footer class="main-footer">
-  <div class="container">
-    <div class="footer-logo-part">
+  <div class="footer-info">
+    <div class="container">
       <div class="logo-block footer-logo">
-        <h2 class="logo">Техномарт</h2>
+       <h2 class="logo">Техномарт</h2>
       </div>
       <p class="footer-address">
         г. Москва, ул. Строителей, 15
         +7(495) 555-05-55
       </p>
-    </div>
-    <div class="footer-nav-part">
-      <ul class="footer-nav">
+      <ul class="footer-nav1">
         <li class="footer-nav-item"><a href="#">Компания</a></li>
         <li class="footer-nav-item"><a href="#">Новости</a></li>
         <li class="footer-nav-item"><a href="#">Каталог</a></li>
         <li class="footer-nav-item"><a href="#">Доставка</a></li>
         <li class="footer-nav-item"><a href="#">Контакты</a></li>
       </ul>
-      <ul class="foter-nav-sub">
+      <ul class="footer-nav2">
         <li class="footer-nav-sub-item"><a href="#">Материалы</a></li>
         <li class="footer-nav-sub-item"><a href="#">Техника</a></li>
         <li class="footer-nav-sub-item"><a href="#">Инструмент</a></li>
         <li class="footer-nav-sub-item"><a href="#">Спецпредложения</a></li>
       </ul>
-    </div>
-    <div class="footer-sub">
+    </div><!--end container-->
+  </div> <!--end footer-info-->
+  <div class="sub-footer">
+    <div class="container">
       <div class="footer-technomart">
         <p class="footer-technomart-text">
           "2010-2016 Компания"Техномарт"
@@ -300,8 +311,8 @@
         <p class="contact-us-text">Разработано-</p>
         <a class="contact-us" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
       </div>
-    </div>
-  </div>
+  </div><!--end container-->
+  </div><!--end sub-footer-->
 </footer>
 </body>
 </html>
