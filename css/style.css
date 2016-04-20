@@ -1,0 +1,65 @@
+html,body {
+  min-width: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT sans narrow', Cuprum, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-heading {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.logo-heading {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.main-heading {
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.slide-drill-heading {
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-heading {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.title {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
