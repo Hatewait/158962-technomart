@@ -17,17 +17,15 @@
           <input class="search-text" name="search" type="search" id="search-item" placeholder="Поиск:">
         </form>
       </div>
-      <div class="order-block">
-        <ul class="order-block-list">
-          <li class="order-list-item bookmark"><a href="#">Закладки</a></li>
-          <li class="order-list-item cart"><a href="#">Корзина:0</a></li>
-          <li class="order-list-item order-btn"><a href="#">Оформить заказ</a></li>
-        </ul>
-      </div><!--end order-block-->
+      <ul class="order-block-list">
+        <li class="order-list-item bookmark"><a href="#">Закладки</a></li>
+        <li class="order-list-item cart"><a href="#">Корзина:0</a></li>
+        <li class="order-list-item order-btn"><a href="#">Оформить заказ</a></li>
+      </ul>
     </div><!--end container-->
   </div><!--end header-up-->
   <div class="main-info">
-    <div class="container clearfix">
+    <div class="container">
       <div class="shop-heading">
         <h2 class="main-heading"> Интернет-магазин строительных материалов и инструментов для ремонта</h2>
       </div>
@@ -38,13 +36,10 @@
         <p class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, 19/18</p>
       </div>
       <div class="user-block clearfix">
-        <a class="sign-in" href="#">Войти</a>
-        <a class="sign-up" href="#">Регистрация</a>
+        <a class="sign-in login" href="#">Войти</a>
+        <a class="sign-up login" href="#">Регистрация</a>
       </div>
-    </div><!--end container-->
-
-    <div class="main-navigation">
-      <div class="container">
+      <div class="main-navigation">
         <ul class="main-nav-list">
           <li class="nav-list-item active">Главная</li>
           <li class="nav-list-item"><a href="#">Компания</a></li>
@@ -54,13 +49,14 @@
           <li class="nav-list-item"><a href="#">Доставка</a></li>
           <li class="nav-list-item"><a href="#">Контакты</a></li>
         </ul>
-      </div><!--end container-->
-    </div>
+        <!--end container-->
+      </div>
+    </div><!--end container-->
   </div>
 </header>
 
 <div class="main-content">
-  <div class="container clearfix">
+  <div class="container">
     <div class="promo-wrapper clearfix">
       <div class="promo-container clearfix">
         <div class="promo-block materials">
@@ -88,12 +84,12 @@
           <span class="ahead"></span>
         </div>
         <div class="slide-block">
-          <div class="slide">
+          <div class="slide slide1">
             <h2 class="slide-title">Перфораторы</h2>
             <p class="slide-drill-text">Настоящие мужские игрушки</p>
             <a class="btn slide-drill-btn" href="#">Открыть каталог</a>
           </div>
-          <div class="slide">
+          <div class="slide slide2">
             <h2 class="slide-title">Дрели</h2>
             <p class="slide-drill-text">Соседям на радость</p>
             <a class="btn slide-drill-btn" href="#">Открыть каталог</a>
@@ -114,7 +110,7 @@
         <h3 class="preview-text">Популярные товары</h3>
         <a class="btn preview-btn" href="#">Все популярные товары</a>
       </div><!--end preview-block-header-->
-      <div class="pop-catalog-items clearfix">
+      <div class="pop-catalog-items">
         <div class="catalog-item">
           <div class="actions">
             <a href="#" class="buy">Купить</a>
@@ -170,34 +166,34 @@
         <a class="btn preview-btn" href="#">Все производители</a>
       </div><!--end pop-block-header-->
       <div class="pop-catalog-items">
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="126" height="37" class="firm-img" src="img/content/bosch.png"
                                              alt="bosh"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="123" height="40" class="firm-img" src="img/content/makita.png"
                                              alt="makita"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="146" height="44" class="firm-img" src="img/content/dewalt.png"
                                              alt="dewalt"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="184" height="29" class="firm-img" src="img/content/interskol.png"
                                              alt="interskol"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="169" height="31" class="firm-img" src="img/content/hitachi.png"
                                              alt="hitachi"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="121" height="73" class="firm-img" src="img/content/lg.png" alt="lg"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="141" height="69" class="firm-img" src="img/content/aeg.png"
                                              alt="aeg"></a>
         </div>
-        <div class="catalog-item-firm">
+        <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="204" height="69" class="firm-img" src="img/content/metabo.png"
                                              alt="metabo"></a>
         </div>
@@ -206,46 +202,49 @@
   </div><!--end container-->
 
   <div class="service-block">
-    <div class="container clearfix">
-      <div class="our-service">
-        <h3 class="service-heading">Сервисы</h3>
-        <p class="our-service-text">
-          Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-      </div>
-      <div class="service-list">
-        <ul class="service-list">
-          <li class="service-list-item active">Доставка</li>
-          <li class="service-list-item"><a href="#">Гарантия</a></li>
-          <li class="service-list-item"><a href="#">Кредит</a></li>
-        </ul>
-      </div>
-      <div class="service-slides">
-        <div class="service-slide delivery-slide">
-          <h3 class="service-slide-heading">Доставка</h3>
-          <p class="service-slide-text">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-          </p>
-        </div><!--end service-slide-->
-        <div class="service-slide guaranty">
-          <h3 class="service-slide-heading">Гарантия</h3>
-          <p class="service-slide-text">
-            Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его
-            возгоранием,
-            вы всегда можете быть уверенными в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите
-            как-нибудь сами.
+    <div class="container">
+      <div class="service-wrapper clearfix">
+        <div class="our-service">
+          <h3 class="service-heading">Сервисы</h3>
+          <p class="our-service-text">
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-        <div class="service-slide credit">
-          <h3 class="service-slide-heading">Кредит</h3>
-          <p class="service-slide-text">
-            Залезть в долговую яму стало проще. Кредитные консультанты придут к вам на помощь.
-          </p>
-          <a class="btn-slide" href="">Отправить заявку</a>
+        <div class="service-list">
+          <ul class="service-list">
+            <li class="service-list-item active">Доставка</li>
+            <li class="service-list-item"><a href="#">Гарантия</a></li>
+            <li class="service-list-item"><a href="#">Кредит</a></li>
+          </ul>
         </div>
-      </div><!--end service-slides-->
+        <div class="service-slides clearfix">
+          <div class="service-slide delivery-slide">
+            <h3 class="service-slide-heading">Доставка</h3>
+            <p class="service-slide-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            </p>
+          </div><!--end service-slide-->
+          <div class="service-slide guaranty">
+            <h3 class="service-slide-heading">Гарантия</h3>
+            <p class="service-slide-text">
+              Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его
+              возгоранием,
+              вы всегда можете быть уверенными в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
+              восстановите
+              как-нибудь сами.
+            </p>
+          </div>
+          <div class="service-slide credit">
+            <h3 class="service-slide-heading">Кредит</h3>
+            <p class="service-slide-text">
+              Залезть в долговую яму стало проще. Кредитные консультанты придут к вам на помощь.
+            </p>
+            <a class="btn-slide" href="">Отправить заявку</a>
+          </div>
+        </div><!--end service-slides-->
+      </div><!--end service-wrapper-->
     </div><!--end container-->
   </div><!--end service-block-->
   <div class="about-us">
@@ -299,10 +298,10 @@
           +7 (812) 555-05-55
         </p>
         <ul class="footer-nav2">
-          <li class="footer-nav-item nav2"><a href="#">Материалы</a></li>
-          <li class="footer-nav-item nav2"><a href="#">Техника</a></li>
-          <li class="footer-nav-item nav2"><a href="#">Инструмент</a></li>
-          <li class="footer-nav-item nav2"><a href="#">Спецпредложения</a></li>
+          <li class="footer-nav-item"><a href="#">Материалы</a></li>
+          <li class="footer-nav-item"><a href="#">Техника</a></li>
+          <li class="footer-nav-item"><a href="#">Инструмент</a></li>
+          <li class="footer-nav-item"><a href="#">Спецпредложения</a></li>
         </ul>
       </div>
     </div><!--end container-->
