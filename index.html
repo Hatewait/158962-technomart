@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Htmlacademy-Technomart</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -203,7 +204,6 @@
 
   <div class="service-block">
     <div class="container">
-      <div class="service-wrapper clearfix">
         <div class="our-service">
           <h3 class="service-heading">Сервисы</h3>
           <p class="our-service-text">
@@ -211,13 +211,12 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-        <div class="service-list">
+      <div class="service-block-wrapper clearfix"><!--почему просто на список флоат делать редактор ругается?-->
           <ul class="service-list">
             <li class="service-list-item active">Доставка</li>
             <li class="service-list-item"><a href="#">Гарантия</a></li>
             <li class="service-list-item"><a href="#">Кредит</a></li>
           </ul>
-        </div>
         <div class="service-slides clearfix">
           <div class="service-slide delivery-slide">
             <h3 class="service-slide-heading">Доставка</h3>
@@ -244,7 +243,7 @@
             <a class="btn-slide" href="">Отправить заявку</a>
           </div>
         </div><!--end service-slides-->
-      </div><!--end service-wrapper-->
+      </div><!--end service-block-wrapper-->
     </div><!--end container-->
   </div><!--end service-block-->
   <div class="about-us">

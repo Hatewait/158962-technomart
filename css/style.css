@@ -77,7 +77,6 @@ body {
 }
 
 .header-heading {
-  width: 110px;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -92,7 +91,7 @@ body {
 
 .search-form {
   float: left;
-  width: 87px;
+  width: 80px;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -195,9 +194,9 @@ body {
 
 .main-nav-list {
   margin: 0;
-  padding-top: 16px;
-  padding-bottom: 25px;
+  padding: 0;
   list-style: none;
+  font-size: 0;
 }
 
 .nav-list-item {
@@ -208,15 +207,21 @@ body {
   line-height: 17px;
   vertical-align: middle;
   color: #ffffff;
-
 }
 
+.nav-list-item:first-child {
+  padding-left: 48px;
+  padding-right: 30px;
+}
 .nav-list-item a {
-  display: inline;
-  padding: 20px 27px;
+  display: inline-block;
+  padding: 22px 30px;
   text-decoration: none;
   color: #ffffff;
 }
+
+/* в макете отступ между пунктами меню 50рх, у меня никак не влезают эти размеры(*/
+
 
 .promo-block {
   float: left;
@@ -356,7 +361,7 @@ body {
 .service-list {
   width: 240px;
   float: left;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 .service-slides {
@@ -400,7 +405,6 @@ body {
   float: left;
   width: 220px;
   margin: 0px;
-  margin-right: 170px;
 }
 
 .footer-nav1 {
@@ -436,7 +440,6 @@ body {
   float: left;
   width: 345px;
   margin: 0px;
-  margin-right: 30px;
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -720,19 +723,15 @@ body {
 }
 
 .arrows-list {
-  position: relative;
+  float: right;
   margin: 0px;
+  padding-right: 16px;
+  padding-top: 10px;
 }
 
 .arrows-list li {
   padding-right: 0px;
 }
-
-.arrows-block {
-  float: right;
-  width: 50px;
-}
-
 .arrow {
   display: block;
   width: 0px;
@@ -741,17 +740,12 @@ body {
 }
 
 .arrow-down {
-  position: absolute;
-  top: 7px;
-  right: 0px;
   border-width: 0 5.5px 10px 5.5px;
   border-color: transparent transparent #c1c1c1 transparent;
 }
 
 .arrow-up {
-  position: absolute;
-  top: 7px;
-  right: 17px;
+  margin-right: 20px;
   border-width: 10px 5.5px 0 5.5px;
   border-color: #c1c1c1 transparent transparent transparent;
 }
@@ -822,6 +816,7 @@ body {
 }
 
 .description-text {
+  margin: 0;
   font-family: 'PT sans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 24px;
