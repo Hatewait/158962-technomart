@@ -282,12 +282,14 @@ body {
 }
 
 .preview-block-header {
+  padding: 20px 20px;
   background-color: #f7f3ec;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .preview-text {
+  margin: 0;
   float: left;
   width: 320px;
   font-family: Cuprum, Arial, Helvetica, sans-serif;
