@@ -11,7 +11,7 @@
   <div class="header-up">
     <div class="container clearfix">
       <div class="logo-block">
-        <h1 class="header-heading">Техномарт</h1>
+        <h1 class="header-heading main">Техномарт</h1>
       </div>
       <div class="search-form">
         <form action="#" method="GET">
@@ -86,14 +86,18 @@
         </div>
         <div class="slide-block">
           <div class="slide slide1">
-            <h2 class="slide-title">Перфораторы</h2>
-            <p class="slide-drill-text">Настоящие мужские игрушки</p>
-            <a class="btn slide-drill-btn" href="#">Открыть каталог</a>
+            <div class="slide-text">
+              <h2 class="slide-title">Перфораторы</h2>
+              <p class="slide-drill-text">Настоящие мужские игрушки</p>
+              <a class="btn slide-drill-btn" href="#">Открыть каталог</a>
+            </div>
           </div>
           <div class="slide slide2">
-            <h2 class="slide-title">Дрели</h2>
-            <p class="slide-drill-text">Соседям на радость</p>
-            <a class="btn slide-drill-btn" href="#">Открыть каталог</a>
+            <div class="slide-text">
+              <h2 class="slide-title">Дрели</h2>
+              <p class="slide-drill-text">Соседям на радость</p>
+              <a class="btn slide-drill-btn" href="#">Открыть каталог</a>
+            </div>
           </div>
         </div><!--end slide block-->
       </div><!--end slider-->
@@ -204,28 +208,32 @@
 
   <div class="service-block">
     <div class="container">
-        <div class="our-service">
-          <h3 class="service-heading">Сервисы</h3>
-          <p class="our-service-text">
-            Хороший интернет-магазин отличается от плохого не только ценами!
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
-        </div>
+      <div class="our-service">
+        <h3 class="service-heading">Сервисы</h3>
+        <p class="our-service-text">
+          Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+      </div>
       <div class="service-block-wrapper clearfix"><!--почему просто на список флоат делать редактор ругается?-->
-          <ul class="service-list">
-            <li class="service-list-item active">Доставка</li>
-            <li class="service-list-item"><a href="#">Гарантия</a></li>
-            <li class="service-list-item"><a href="#">Кредит</a></li>
-          </ul>
-        <div class="service-slides clearfix">
-          <div class="service-slide delivery-slide">
-            <h3 class="service-slide-heading">Доставка</h3>
-            <p class="service-slide-text">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-            </p>
-          </div><!--end service-slide-->
-          <div class="service-slide guaranty">
+        <ul class="service-list">
+          <li class="service-list-item"><a class="active" href="#">Доставка</a></li>
+          <li class="service-list-item"><a href="#">Гарантия</a></li>
+          <li class="service-list-item"><a href="#">Кредит</a></li>
+        </ul>
+        <div class="service-slider">
+          <div class="service-text-wrapper clearfix">
+            <div class="service-slide slide-delivery">
+              <h3 class="service-slide-heading">Доставка</h3>
+              <p class="service-slide-text">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+              </p>
+            </div>
+          </div>
+        </div><!--end service-slide-->
+        <div class="service-slide guaranty">
+          <div class="service-text-wrapper">
             <h3 class="service-slide-heading">Гарантия</h3>
             <p class="service-slide-text">
               Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его
@@ -235,46 +243,49 @@
               как-нибудь сами.
             </p>
           </div>
-          <div class="service-slide credit">
-            <h3 class="service-slide-heading">Кредит</h3>
-            <p class="service-slide-text">
-              Залезть в долговую яму стало проще. Кредитные консультанты придут к вам на помощь.
-            </p>
-            <a class="btn-slide" href="">Отправить заявку</a>
-          </div>
-        </div><!--end service-slides-->
-      </div><!--end service-block-wrapper-->
-    </div><!--end container-->
-  </div><!--end service-block-->
-  <div class="about-us">
-    <div class="container clearfix">
-      <div class="features">
-        <h2 class="features-heading">Компания "Техномарт"</h2>
-        <p class="features-text">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-          равнодушными любителей сэкономить на гастрабайтерах.
-        </p>
-        <p class="features-text">
-          Мы можем доставить ваш товар в самый отдаленные точки России! Техномарт работает со многими транспортными
-          компаниями!
-        </p>
-        <ul class="features-list">
-          <li class="features-list-item">Деловые линии</li>
-          <li class="features-list-item">Автотрейдинг</li>
-          <li class="features-list-item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="btn features-btn" href="#">Подробнее о компании</a>
-      </div>
-      <div class="contacts">
-        <h2 class="contacts-heading">Контакты</h2>
-        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис</p>
-        <div class="map">
-          <iframe src="" frameborder="0">the map will be here</iframe>
         </div>
-        <a class="btn contacts-btn" href="#">Заблудились? Напишите нам!</a>
+        <div class="service-slide credit">
+          <h3 class="service-slide-heading">Кредит</h3>
+          <p class="service-slide-text">
+            Залезть в долговую яму стало проще. Кредитные консультанты придут к вам на помощь.
+          </p>
+          <a class="btn-slide" href="">Отправить заявку</a>
+        </div>
+      </div><!--end service-slides-->
+    </div><!--end service-block-wrapper-->
+  </div><!--end container-->
+</div><!--end service-block-->
+<div class="about-us">
+  <div class="container clearfix">
+    <div class="features">
+      <h2 class="about-us-heading">Компания "Техномарт"</h2>
+      <p class="features-text">
+        Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+        равнодушными любителей сэкономить на гастрабайтерах.
+      </p>
+      <p class="features-text">
+        Мы можем доставить ваш товар в самый отдаленные точки России! Техномарт работает со многими транспортными
+        компаниями!
+      </p>
+      <ul class="features-list">
+        <li class="features-list-item">Деловые линии</li>
+        <li class="features-list-item">Автотрейдинг</li>
+        <li class="features-list-item">ЖелДорЭкспедиция</li>
+      </ul>
+      <a class="btn features-btn" href="#">Подробнее о компании</a>
+    </div>
+    <div class="contacts">
+      <h2 class="about-us-heading">Контакты</h2>
+      <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис</p>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123638!2d30.320894615666862!3d59.93879686904849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1461751973633"
+          width="300" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-    </div><!--end container-->
-  </div><!--end about-us-->
+      <a class="btn contacts-btn" href="#">Заблудились? Напишите нам!</a>
+    </div>
+  </div><!--end container-->
+</div><!--end about-us-->
 </div><!--end main-content-->
 <footer class="main-footer">
   <div class="footer-info">
