@@ -1,0 +1,51 @@
+
+.icon-basket:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-vk:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-bookmark:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-phone:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-login:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-logout:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-search:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-user:before {
+  content: '\e809';
+}
+
+/* '' */

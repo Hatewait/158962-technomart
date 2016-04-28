@@ -5,6 +5,13 @@
   <title>Htmlacademy-Technomart</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/animation.css" type="text/css">
+  <link rel="stylesheet" href="css/fontello.css" type="text/css">
+  <link rel="stylesheet" href="css/fontello-codes.css" type="text/css">
+  <link rel="stylesheet" href="css/fontello-ie7.css" type="text/css">
+  <link rel="stylesheet" href="css/fontello-ie7-codes.css" type="text/css">
 </head>
 <body>
 <header class="main-header">
@@ -15,12 +22,12 @@
       </div>
       <div class="search-form">
         <form action="#" method="GET">
-          <input class="search-text" name="search" type="search" id="search-item" placeholder="Поиск:">
+          <input class="search-field icon-search" name="search" type="search" id="search-item" placeholder="Поиск:">
         </form>
       </div>
       <ul class="order-block-list">
-        <li class="order-list-item bookmark"><a href="#">Закладки</a></li>
-        <li class="order-list-item cart"><a href="#">Корзина:0</a></li>
+        <li class="order-list-item bookmark"><a class="icon-bookmark" href="#">Закладки</a></li>
+        <li class="order-list-item cart"><a class="icon-basket" href="#">Корзина:0</a></li>
         <li class="order-list-item order-btn"><a href="#">Оформить заказ</a></li>
       </ul>
     </div><!--end container-->
@@ -32,12 +39,12 @@
       </div>
       <div class="address">
         <div class="phone-number">
-          <span class="phone-number-content">+7-495-555-05-55</span>
+          <span class="phone-number-content icon-phone">+7-495-555-05-55</span>
         </div>
         <p class="address-text">г. Санкт-Петербург, ул. Б. Конюшенная, 19/18</p>
       </div>
       <div class="user-block clearfix">
-        <a class="sign-in login" href="#">Войти</a>
+        <a class="sign-in login icon-login" href="#">Войти</a>
         <a class="sign-up login" href="#">Регистрация</a>
       </div>
       <div class="main-navigation">
@@ -115,8 +122,8 @@
         <h3 class="preview-text">Популярные товары</h3>
         <a class="btn preview-btn" href="#">Все популярные товары</a>
       </div><!--end preview-block-header-->
-      <div class="pop-catalog-items">
-        <div class="catalog-item">
+      <div class="catalog-items main-page-catalog">
+        <div class="catalog-item main-page-item">
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -128,7 +135,7 @@
           <div class="discount">32 500 Р.</div>
           <div class="price">25 500 Р.</div>
         </div><!--end catalog-item-->
-        <div class="catalog-item">
+        <div class="catalog-item main-page-item">
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -140,7 +147,7 @@
           <div class="discount">22 500 Р.</div>
           <div class="price">15 500 Р.</div>
         </div><!--end catalog-item-->
-        <div class="catalog-item">
+        <div class="catalog-item main-page-item">
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -152,7 +159,7 @@
           <div class="discount">30 500 Р.</div>
           <div class="price">25 500 Р.</div>
         </div><!--end catalog-item-->
-        <div class="catalog-item">
+        <div class="catalog-item main-page-item">
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -160,17 +167,17 @@
           <div class="catalog-item-image new">
             <img width="127" height="92" src="img/content/catalog-img4.jpg" alt="Перфоратор BOSCH BFG 2000">
           </div>
-          <h2 class="title">Перфоратор BOSCH BFG 2000</h2>
+          <h2 class="title new">Перфоратор BOSCH BFG 2000</h2>
           <div class="price">12 500 Р.</div>
         </div><!--end catalog-item-->
-      </div><!--end pop-catalog-items-->
+      </div><!--end catalog-items-->
     </div><!--end preview-block-->
     <div class="preview-block">
       <div class="preview-block-header clearfix">
         <h2 class="preview-text">Популярные производители</h2>
         <a class="btn preview-btn" href="#">Все производители</a>
       </div><!--end pop-block-header-->
-      <div class="pop-catalog-items">
+      <div class="catalog-items main-page-catalog">
         <div class="catalog-item firm">
           <a class="firm-item" href="#"><img width="126" height="37" class="firm-img" src="img/content/bosch.png"
                                              alt="bosh"></a>
@@ -202,7 +209,7 @@
           <a class="firm-item" href="#"><img width="204" height="69" class="firm-img" src="img/content/metabo.png"
                                              alt="metabo"></a>
         </div>
-      </div><!--end pop-catalog-items-->
+      </div><!--end catalog-items-->
     </div><!--end preview-block-->
   </div><!--end container-->
 
@@ -217,9 +224,9 @@
       </div>
       <div class="service-block-wrapper clearfix"><!--почему просто на список флоат делать редактор ругается?-->
         <ul class="service-list">
-          <li class="service-list-item"><a class="active" href="#">Доставка</a></li>
-          <li class="service-list-item"><a href="#">Гарантия</a></li>
-          <li class="service-list-item"><a href="#">Кредит</a></li>
+          <li class="service-list-item active">Доставка</li>
+          <li class="service-list-item">Гарантия</li>
+          <li class="service-list-item">Кредит</li>
         </ul>
         <div class="service-slider">
           <div class="service-text-wrapper clearfix">
@@ -325,17 +332,17 @@
         </p>
       </div>
       <div class="footer-social">
-        <a href="#" class="social-btn social-btn-vk"></a>
-        <a href="#" class="social-btn social-btn-fb"></a>
+        <a href="#" class="social-btn social-btn-vk icon-vk"></a>
+        <a href="#" class="social-btn social-btn-fb icon-facebook"></a>
         <a href="#" class="social-btn social-btn-inst"></a>
       </div>
       <div class="contact-us-block">
         <p class="contact-us-text">Обратная связь:</p>
-        <a class="contact-us" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="contact-us-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="contact-us-block">
         <p class="contact-us-text">Разработано-</p>
-        <a class="contact-us" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
+        <a class="contact-us-link" href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a>
       </div>
     </div><!--end container-->
   </div><!--end sub-footer-->
