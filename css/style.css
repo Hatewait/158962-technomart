@@ -14,6 +14,22 @@ body {
 }
 
 @font-face {
+  font-family: 'PT sans', Arial, Helvetica, sans-serif;
+  src: url("../fonts/web/ptsans.woff") format("woff"),
+  url("../fonts/web/ptsans.woff2") format("woff2"),
+  url("../fonts/web/ptsansbold.woff") format("woff"),
+  url("../fonts/web/ptsansbold.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  src: url("../fonts/web/cuprum.woff") format("woff"),
+  url("../fonts/web/cuprum.woff2") format("woff2"),
+  url("../fonts/web/cuprumbold.woff") format("woff"),
+  url("../fonts/web/cuprumbold.woff2") format("woff2"),
+}
+
+@font-face {
   font-weight: normal;
   font-style: normal;
 
@@ -60,11 +76,6 @@ body {
   content: "\66";
 }
 
-/* "f" */
-.icon-twitter::before {
-  content: "\74";
-}
-
 /* "t" */
 .icon-vk::before {
   content: "\76";
@@ -100,30 +111,6 @@ body {
   content: "\241b";
 }
 
-/* "␛" */
-.icon-up-dir::before {
-  content: "\25b2";
-}
-
-/* "▲" */
-.icon-down-dir::before {
-  content: "\25bc";
-}
-
-/* "▼" */
-.icon-circle::before {
-  content: "\25cb";
-}
-
-/* "○" */
-.icon-circle-dot::before {
-  content: "\25cf";
-}
-
-/* "●" */
-.icon-star::before {
-  content: "\2605";
-}
 
 /* "★" */
 .icon-check-off::before {
@@ -133,11 +120,6 @@ body {
 /* "☐" */
 .icon-check-on::before {
   content: "\2611";
-}
-
-/* "☑" */
-.icon-youtube::before {
-  content: "\f39e";
 }
 
 /* "" */
