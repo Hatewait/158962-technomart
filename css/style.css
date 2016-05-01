@@ -4,35 +4,40 @@ html, body {
   padding: 0;
 }
 
-body {
-  font-family: 'PT sans', Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
+@font-face {
+  font-family: 'PT sans';
+  src: url("../fonts/ptsans.woff") format("woff"),
+  url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT sans', Arial, Helvetica, sans-serif;
-  src: url("../fonts/web/ptsans.woff") format("woff"),
-  url("../fonts/web/ptsans.woff2") format("woff2"),
-  url("../fonts/web/ptsansbold.woff") format("woff"),
-  url("../fonts/web/ptsansbold.woff2") format("woff2"),
+  font-family: 'PT sans';
+url("../fonts/ptsansbold.woff") format("woff"),
+url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
-  src: url("../fonts/web/cuprum.woff") format("woff"),
-  url("../fonts/web/cuprum.woff2") format("woff2"),
-  url("../fonts/web/cuprumbold.woff") format("woff"),
-  url("../fonts/web/cuprumbold.woff2") format("woff2"),
+  font-family: Cuprum;
+  src: url("../fonts/cuprum.woff") format("woff"),
+  url("../fonts/cuprum.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+url("../fonts/web/cuprumbold.woff") format("woff"),
+url("../fonts/web/cuprumbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-technomart";
   src: url("../fonts/symbols-technomart.woff") format("woff"),
   url("../fonts/symbols-technomart.woff2") format("woff2");
@@ -111,7 +116,6 @@ body {
   content: "\241b";
 }
 
-
 /* "★" */
 .icon-check-off::before {
   content: "\2610";
@@ -153,6 +157,16 @@ body {
 }
 
 /* "\1f516" */
+
+body {
+  font-family: 'PT sans', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
 
 .icon-user {
   float: left;
@@ -201,37 +215,48 @@ body {
 .icon-login:active {
   color: #c5c5c5;
 }
+
+.icon-logout {
+  text-decoration: none;
+}
+
+.icon-search {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: #6a7180;
+}
 .sprite {
-  background-image: url(../img/icons/sprite-new.png);
+  background-image: url(../img/icons/sprite.png);
   background-repeat: no-repeat;
   display: block;
 }
 
-.sprite-check-off {
+.sprite-icon-check-off {
   width: 23px;
   height: 23px;
   background-position: -10px -10px;
 }
 
-.sprite-check-on {
-  width: 27px;
+.sprite-icon-check-off-hover {
+  width: 23px;
   height: 23px;
   background-position: -10px -53px;
 }
 
-.sprite-disabled-check-off {
-  width: 23px;
+.sprite-icon-check-on {
+  width: 27px;
   height: 23px;
   background-position: -10px -96px;
 }
 
-.sprite-disabled-check-on {
+.sprite-icon-check-on-hover {
   width: 27px;
   height: 23px;
   background-position: -10px -139px;
 }
 
-.sprite-home {
+.sprite-icon-home {
   width: 15px;
   height: 12px;
   background-position: -10px -182px;
@@ -249,12 +274,35 @@ body {
   background-position: -10px -274px;
 }
 
-.sprite-small-arrow-right {
-  width: 8px;
-  height: 12px;
+.sprite-promo-delivery {
+  width: 78px;
+  height: 63px;
   background-position: -10px -334px;
 }
 
+.sprite-promo-discount {
+  width: 59px;
+  height: 72px;
+  background-position: -10px -417px;
+}
+
+.sprite-promo-material {
+  width: 44px;
+  height: 65px;
+  background-position: -10px -509px;
+}
+
+.sprite-promo-tech {
+  width: 78px;
+  height: 62px;
+  background-position: -10px -594px;
+}
+
+.sprite-promo-tool {
+  width: 75px;
+  height: 61px;
+  background-position: -10px -676px;
+}
 
 
 .clearfix::after {
@@ -293,8 +341,16 @@ body {
 }
 
 .logo-heading a {
-  text-decoration: none;
+  display: block;
+  margin: 0;
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-transform: uppercase;
   color: #ffffff;
+  text-decoration: none;
 }
 .main-heading {
   margin: 0;
@@ -339,11 +395,12 @@ body {
 
 .header-heading {
   margin: 0;
+  padding-left: 50px; /*если убираю этот паддинг, то текст убегает влево((*/
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  line-height: 24px;
+  line-height: 41px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -359,21 +416,13 @@ body {
 .header-heading:focus {
   background-color: #ee3643;
 }
-.header-heading.main {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-}
 
 .header-heading a {
-  display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
   text-decoration: none;
   color: #ffffff;
 }
 .search-form {
+  position: relative;
   float: left;
   width: 270px;
 }
@@ -587,6 +636,7 @@ body {
   padding-right: 30px;
 }
 .promo-block {
+
   float: left;
   width: 280px;
   height: 123px;
@@ -598,44 +648,69 @@ body {
 .promo-block:nth-child(3n) {
   margin-right: 0;
 }
-
 .materials {
   background-color: #f6b22d;
-  background-image: url("../img/decoration/promo-material.png");
-  background-repeat: no-repeat;
-  background-position: 210px 25px;
+}
+
+.materials::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 65px;
+  background-position: -10px -509px;
+  background-image: url("../img/icons/sprite.png");
 }
 
 .tools {
   background-color: #4aafde;
-  background-image: url("../img/decoration/promo-tool.png");
-  background-repeat: no-repeat;
-  background-position: 210px 25px;
 }
 
+.tools::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 61px;
+  background-position: -10px -676px;
+  background-image: url("../img/icons/sprite.png");
+}
 .tech {
   background-color: #cc79d1;
-  background-image: url("../img/decoration/promo-tech.png");
-  background-repeat: no-repeat;
-  background-position: 210px 25px;
 }
 
+.tech::after {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  background-position: -10px -594px;
+  background-image: url("../img/icons/sprite.png");
+}
 .sale {
   margin-right: 0px;
   background-color: #85d179;
-  background-image: url("../img/decoration/promo-discount.png");
-  background-repeat: no-repeat;
-  background-position: 210px 25px;
 }
 
+.sale::after {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 72px;
+  background-position: -10px -417px;
+  background-image: url("../img/icons/sprite.png");
+}
 .delivery {
   margin-right: 0px;
   background-color: #f6b22d;
-  background-image: url("../img/decoration/promo-delivery.png");
-  background-repeat: no-repeat;
-  background-position: 210px 25px;
 }
 
+.delivery::after {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 63px;
+  background-position: -10px -334px;
+  background-image: url("../img/icons/sprite.png");
+}
 .promo-btn {
   display: block;
   width: 134px;
@@ -676,6 +751,7 @@ body {
   float: left;
   width: 620px;
   margin-right: 15px;
+  background-color: rgba(242, 246, 248 0); /*может ее сюда добавить подложку эту? а то в slider-text кнопка тогда выпадает из блока вниз и картинка сдвигается вправо на полблока*/
 }
 
 .slide {
@@ -797,10 +873,9 @@ body {
   margin-right: 20px;
 }
 
-h2.title.new {
-  margin-bottom: 49px;
+.title-wrapper {
+  min-height: 73px;
 }
-
 .firm {
   margin-bottom: 25px;
   height: 145px;
@@ -1137,13 +1212,16 @@ h2.title.new {
   background-color: #212a3a;
 }
 
-.social-btn span {
-  position: absolute;
+.icon-vk, .icon-facebook, .icon-instagramm {
   top: 6px;
   left: 5px;
   font-size: 20px;
+  line-height: 40px;
+  text-align: center;
   color: #ffffff;
+  text-decoration: none;
 }
+
 /*catalog page*/
 .login-block {
   background-color: #ffffff;
@@ -1221,19 +1299,18 @@ h2.title.new {
   width: 4px;
   height: 4px;
   background-color: #32425c;
-  border-radius: 50px;
-}
-.bread-crumbs {
-  width: 400px;
+  border-radius: 50%;
 }
 
 .bread-crumbs-list {
-  width: 460px;
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
+.bread-crumbs-item.icon-right {
+  color: #c1c6ce;
+}
 .bread-crumbs-item {
   display: inline;
   padding-right: 30px;
@@ -1241,6 +1318,7 @@ h2.title.new {
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
+  color: #000000;
 }
 
 .bread-crumbs-icon {
@@ -1252,22 +1330,12 @@ h2.title.new {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url("../img/icons/sprite-new.png");
+  background-image: url("../img/icons/sprite.png");
   width: 15px;
   height: 12px;
   background-position: -10px -182px;
 }
 
-.bread-crumbs-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-image: url("../img/icons/sprite-new.png");
-  width: 8px;
-  height: 12px;
-  background-position: -10px -334px;
-}
 .bread-crumbs-list a {
   text-decoration: none;
   color: #000000;
@@ -1357,7 +1425,7 @@ h2.title.new {
 .price-controls input {
   width: 81px;
   height: 15px;
-  padding: 8px 10px;
+  padding: 8px 9px;
   font-family: 'PT sans', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -1370,6 +1438,7 @@ h2.title.new {
 }
 
 .parameters-list {
+  margin: 0;
   list-style-type: none;
 }
 .parameters-heading {
@@ -1428,7 +1497,7 @@ input[type="checkbox"] + label::before {
   position: absolute;
   left: 0px;
   top: -1px;
-  background-image: url("../img/icons/sprite-new.png");
+  background-image: url("../img/icons/sprite.png");
   width: 23px;
   height: 23px;
   background-position: -10px -10px;
@@ -1437,23 +1506,23 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   width: 27px;
   height: 23px;
-  background-position: -10px -53px;
-}
-
-input[type="checkbox"] + label:hover::before {
-  background-position: -10px -10px;
-}
-
-input[type="checkbox"]:checked + label:hover::before {
-  background-position: -10px -53px;
-}
-
-input[type="checkbox"]:disabled + label::before {
   background-position: -10px -96px;
 }
 
-input[type="checkbox"]:checked:disabled + label::before {
+input[type="checkbox"] + label:hover::before {
+  background-position: -10px -53px;
+}
+
+input[type="checkbox"]:checked + label:hover::before {
   background-position: -10px -139px;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  opacity: 0.3;
 }
 
 .parameters-list input[type="radio"] {
@@ -1699,12 +1768,14 @@ input[type="radio"]:checked:disabled + label::after {
 
 .catalog-item .title {
   font-size: 18px;
+  line-height: 20px;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 0 25px;
 }
 
 .catalog-item .discount {
+  display: block;
   min-height: 20px;
   margin-bottom: 10px;
   text-decoration: line-through;
@@ -1712,6 +1783,7 @@ input[type="radio"]:checked:disabled + label::after {
 }
 
 .price {
+  display: block;
   position: relative;
   width: 80px;
   margin: 0 auto 20px;
