@@ -1353,7 +1353,7 @@ body {
   position: relative;
 }
 
-.bread-crumbs-icon::before {
+.bread-crumbs-item a::before {
   content: "";
   position: absolute;
   top: 5px;
