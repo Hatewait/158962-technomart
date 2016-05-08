@@ -598,6 +598,8 @@ body {
   padding: 0;
   list-style: none;
   font-size: 0;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
 }
 
 .nav-list-item {
@@ -610,9 +612,6 @@ body {
   color: #ffffff;
 }
 
-.nav-list-item.active {
-  background-color: #32425c;
-}
 .nav-list-item a {
   display: block;
   padding: 22px 30px;
