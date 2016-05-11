@@ -351,25 +351,30 @@
   </div><!--end sub-footer-->
 </footer>
 <div class="pop-up-wrapper">
-  <div class="pop-up ">
+  <div class="pop-up-content ">
     <form action="#">
-      <div class="clearfix">
-        <div class="user-area">
-          <label class="label-text" for="username">Ваше имя:</label>
-          <input class="user" id="username" type="text" placeholder="Представьтесь,пожалуйста">
+      <div class="pop-up-header">
+        <div class="clearfix">
+          <div class="user-block">
+            <label class="label-text" for="username">Ваше имя:</label>
+            <input class="user" id="username" type="text" placeholder="Представьтесь,пожалуйста">
+          </div>
+          <div class="user-block-form">
+            <label class="label-text" for="email">Ваш e-mail:</label>
+            <input class="user" id="email" type="email" placeholder="Для отправки ответа">
+          </div>
         </div>
-        <div class="user-area">
-          <label class="label-text" for="email">Ваш e-mail:</label>
-          <input class="user" id="email" type="email" placeholder="Для отправки ответа">
+        <div class="text-field">
+          <label class="label-text" for="letter">Текст письма:</label>
+          <textarea class="text-area" name="text" id="letter" placeholder="В свободной форме"></textarea>
         </div>
       </div>
-      <div class="text-field">
-        <label class="label-text" for="letter">Текст письма:</label>
-        <textarea class="text-area" name="text" id="letter" placeholder="В свободной форме"></textarea>
+      <div class="pop-up-footer">
         <input class="submit-btn btn-red" type="submit" value="Отправить">
       </div>
     </form>
-  </div>
+    <div class="btn-close"></div>
+  </div><!--pop-up-content-->
 </div>
 </body>
 </html>
