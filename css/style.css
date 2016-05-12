@@ -2262,3 +2262,94 @@ input[type="radio"]:checked:disabled + label::after {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+.cart-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: block;
+}
+
+.cart-content {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  margin-left: -325px;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.cart-header {
+  position: relative;
+  width: 521px;
+  min-height: 120px;
+  padding-top: 50px;
+  padding-left: 80px;
+  background-color: #ffffff;
+}
+
+.cart-footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #f1f1f1;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  width: 60px;
+  height: 60px;
+  background-color: #63a63e;
+  border-radius: 50%;
+}
+
+.cart-icon::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 40px;
+  height: 30px;
+  background: url(../img/icons/tick.png) no-repeat;
+}
+
+.cart-text {
+  margin-left: 100px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.cart-btn {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.cart-out {
+  float: right;
+  display: block;
+  width: 130px;
+  padding: 10px 45px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.close-cart {
+  top: 4px;
+  right: 4px;
+}
