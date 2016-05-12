@@ -135,14 +135,14 @@
       <div class="templates">
         <div class="select clearfix">
           <ul class="select-list">
-            <li class="select-list-item select-sort"><span>сортировка:</span></li>
+            <li class="select-list-item select-sort">сортировка:</li>
             <li class="select-list-item"><a class="active" href="#">по цене</a></li>
             <li class="select-list-item"><a href="#">по типу</a></li>
             <li class="select-list-item"><a href="#">по функционалу</a></li>
           </ul>
           <ul class="arrows-list">
             <li>
-              <a class="arrow arrow-up active" href="#"></a>
+              <a class="arrow arrow-up" href="#"></a>
             </li>
             <li>
               <a class="arrow arrow-down" href="#"></a>
@@ -354,5 +354,31 @@
     </div><!--end container-->
   </div><!--end sub-footer-->
 </footer>
+<div class="pop-up-wrapper">
+  <div class="pop-up-content ">
+    <form action="#">
+      <div class="pop-up-header">
+        <div class="clearfix">
+          <div class="user-block-form">
+            <label class="label-text" for="username">Ваше имя:</label>
+            <input class="user" id="username" type="text" placeholder="Представьтесь,пожалуйста">
+          </div>
+          <div class="user-block-form">
+            <label class="label-text" for="email">Ваш e-mail:</label>
+            <input class="user" id="email" type="email" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <div class="text-field">
+          <label class="label-text" for="letter">Текст письма:</label>
+          <textarea class="text-area" name="text" id="letter" placeholder="В свободной форме"></textarea>
+        </div>
+      </div>
+      <div class="pop-up-footer">
+        <input class="submit-btn" type="submit" value="Отправить">
+      </div>
+    </form>
+    <div class="btn-close"></div>
+  </div><!--pop-up-content-->
+</div>
 </body>
 </html>
