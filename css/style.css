@@ -1001,8 +1001,10 @@ body {
   position: absolute;
   bottom: 0px;
   right: 0;
-  width: 8px;
-  height: 248px;
+  top: 50%;
+  margin-top: -236px;
+  width: 10px;
+  height: 272px;
   background: url(../img/decoration/shadow.png) no-repeat;
 }
 
@@ -1173,6 +1175,20 @@ body {
   margin-bottom: 28px;
 }
 
+.map-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.map-pop-up {
+  width: 970px;
+  height: 476px;
+}
 .main-footer {
   background-color: #32425c;
 }
@@ -1464,17 +1480,12 @@ body {
 }
 
 .bread-crumbs-icon {
-  top: 2px;
-  left: 5px;
   background-image: url("../img/icons/sprite.png");
   width: 15px;
   height: 12px;
   background-position: -10px -182px;
 }
 
-.icon-right {
-  color: #c1c6ce;
-}
 .bread-crumbs-list a {
   display: inline-block;
   text-decoration: none;
@@ -1837,12 +1848,6 @@ input[type="radio"]:checked:disabled + label::after {
 .arrow-down:hover {
   border-color: #000000 transparent transparent transparent;
 }
-.arrow-up:active {
-  border-color: transparent transparent #ee3643 transparent;
-}
-.arrow-down:active {
-  border-color: #ee3643 transparent transparent transparent;
-}
 
 .arrow-up.active {
   border-color: transparent transparent #ee3642 transparent;
@@ -1903,7 +1908,7 @@ input[type="radio"]:checked:disabled + label::after {
   background: url(../img/icons/new-flag.png) no-repeat 0 0;
 }
 
-.new-materials::after {
+.new-flag::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2199,7 +2204,7 @@ input[type="radio"]:checked:disabled + label::after {
   margin-right: 0px;
   margin-bottom: 43px;
   padding: 7px 15px;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  font-family: "PT sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 500;
@@ -2220,11 +2225,6 @@ input[type="radio"]:checked:disabled + label::after {
 .submit-btn {
   width: 460px;
   height: 37px;
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #f6f6f6;
-  text-transform: uppercase;
-  background: #ee3643;
   border: 0 none;
 }
 
@@ -2270,7 +2270,7 @@ input[type="radio"]:checked:disabled + label::after {
   width: 100%;
   height: 100%;
   z-index: 10;
-  display: block;
+  display: none;
 }
 
 .cart-content {
