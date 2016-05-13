@@ -1186,8 +1186,10 @@ body {
 }
 
 .map-pop-up {
-  width: 970px;
-  height: 476px;
+  margin: 0 auto;
+  width: 940px;
+  height: 446px;
+  background: url("../img/content/map.jpg") no-repeat;
 }
 .main-footer {
   background-color: #32425c;
