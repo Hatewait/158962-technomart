@@ -21,7 +21,7 @@
         </form>
       </div>
       <ul class="order-block-list">
-        <li class="order-list-item"><a class="icon-bookmark" href="#">Закладки</a></li>
+        <li class="order-list-item"><a class="icon-bookmark" href="#">Закладки: 0</a></li>
         <li class="order-list-item"><a class="icon-basket" href="#">Корзина: 0</a></li>
         <li class="order-list-item"><a class="order-btn" href="#">Оформить заказ</a></li>
       </ul>
@@ -288,14 +288,11 @@
         <h2 class="about-us-heading">Контакты</h2>
         <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис</p>
         <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123638!2d30.320894615666862!3d59.93879686904849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1461751973633"
-            width="300" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <a href="" class="mini-map">
+            <img src="img/content/mini-map.jpg" width="300" height="158" alt="mini-map">
+          </a>
         </div>
         <a class="btn contacts-btn" href="#">Заблудились? Напишите нам!</a>
-      </div>
-      <div class="map-wrapper">
-        <div class="map-pop-up"></div>
       </div>
     </div><!--end container-->
   </div><!--end about-us-->
@@ -378,6 +375,26 @@
     </form>
     <div class="btn-close"></div>
   </div><!--pop-up-content-->
+</div>
+
+<div class="cart-wrapper">
+  <div class="cart-content ">
+    <div class="cart-header">
+      <div class="cart-text">Товар добавлен в корзину!</div>
+    </div>
+
+    <div class="cart-footer clearfix">
+      <a class="btn cart-btn">Оформить заказ</a>
+      <a href="#" class="btn cart-btn cart-out">Продолжить покупки</a>
+    </div>
+    <div class="btn-close close-cart"></div>
+  </div>
+</div>
+
+<div class="map-wrapper">
+  <div class="map-pop-up">
+    <div class="btn-close"></div>
+  </div>
 </div>
 </body>
 </html>
