@@ -592,7 +592,6 @@ body {
 .address {
   float: left;
   width: 280px;
-  margin-right: 60px;
   margin-bottom: 40px;
 }
 
@@ -1335,6 +1334,9 @@ body {
   background-color: #293449;
 }
 
+.sub-footer.inner {
+  padding-top: 6px;
+}
 .footer-technomart {
   float: left;
   width: 238px;
@@ -1411,16 +1413,20 @@ body {
 
 /*catalog page*/
 .login-block {
+  width: 300px;
+  margin-left: -20px;
   background-color: #ffffff;
 }
+
 
 .user-name {
   float: left;
   width: 221px;
-  padding-left: 0px;
+  margin-bottom: 5px;
+  padding-left: 18px;
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   font-size: 21px;
-  line-height: 47px;
+  line-height: 40px;
   text-decoration: none;
   color: #000000;
 }
@@ -1649,9 +1655,9 @@ body {
 
 .parameters-btn {
   display: block;
-  width: 155px;
+  width: 140px;
   height: 38px;
-  margin-top: 58px;
+  margin-top: 77px;
   padding-top: 0;
   font-family: "PT sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -2071,7 +2077,7 @@ input[type="radio"]:checked:disabled + label::after {
 }
 .catalog-item .discount {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 7px;
   text-decoration: line-through;
   color: #999;
 }
@@ -2080,7 +2086,7 @@ input[type="radio"]:checked:disabled + label::after {
   display: block;
   position: relative;
   width: 80px;
-  margin: 0 auto 20px;
+  margin: 0 auto 14px;
   padding: 8px 30px;
   color: #fff;
   border-radius: 3px;
