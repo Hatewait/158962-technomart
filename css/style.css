@@ -591,7 +591,7 @@ body {
 }
 
 .main-info.inner-page {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding-bottom: 65px;
 }
 
@@ -951,7 +951,7 @@ body {
 }
 
 .preview-block-header.pop-names {
-  padding: 21px 26px;
+  padding: 18px 25px;
   background-color: #f7f3ec;
   margin-bottom: 24px;
 }
@@ -983,32 +983,9 @@ body {
   background-color: #ba2732;
 }
 
-.catalog-items {
-  margin-bottom: 20px;
-}
-.catalog-items.main-page-catalog {
-  margin-bottom: 23px;
-}
-
-.catalog-item.main-page-item {
-
-  margin-bottom: 0;
-}
-
-.catalog-item.main-page-item:nth-child(4n) {
-  margin-right: 0px;
-}
-
-.catalog-item.firm:nth-child(4n) {
-  margin-right: 0px;
-}
 .title-wrapper {
   min-height: 78px;
-  margin-bottom: 7px;
-}
-
-.title.new {
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 .firm {
   margin-bottom: 25px;
@@ -1026,8 +1003,8 @@ body {
 }
 
 .service-block {
-  margin-top: 57px;
-  margin-bottom: 80px;
+  margin-top: 62px;
+  margin-bottom: 78px;
   padding-top: 64px;
   background-color: #f1f5f7;
 }
@@ -1114,7 +1091,7 @@ body {
 .slide-delivery {
   background-image: url("../img/slides/service-slide1.png");
   background-repeat: no-repeat;
-  background-position: 100% 25px;
+  background-position: 160px 25px;
 }
 
 .guaranty {
@@ -1276,10 +1253,6 @@ body {
 }
 .logo-part {
   margin-bottom: 23px;
-}
-
-.logo-part.inner-page {
-  margin-bottom: 15px;
 }
 
 .footer-logo {
@@ -1916,9 +1889,9 @@ input[type="radio"]:checked:disabled + label::after {
 
 .arrows-list {
   float: right;
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  padding-top: 7px;
+  padding-top: 2px;
 }
 
 .arrows-list li {
@@ -1975,9 +1948,25 @@ input[type="radio"]:checked:disabled + label::after {
 }
 
 .catalog-items {
+  margin-bottom: 24px;
   font-size: 0;
 }
 
+.catalog-item.main-page-item {
+  margin-bottom: 0;
+}
+
+.catalog-items.main-page-catalog {
+  margin-bottom: 30px;
+}
+
+.catalog-item.main-page-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.catalog-item.firm:nth-child(4n) {
+  margin-right: 0px;
+}
 .catalog-item {
   position: relative;
   display: inline-block;
@@ -2134,6 +2123,10 @@ input[type="radio"]:checked:disabled + label::after {
   margin-bottom: 9px;
   padding: 0 25px;
 }
+
+.title.new {
+  margin-bottom: 0px;
+}
 .catalog-item .discount {
   display: block;
   text-decoration: line-through;
@@ -2146,6 +2139,7 @@ input[type="radio"]:checked:disabled + label::after {
   width: 80px;
   margin: 0 auto 14px;
   padding: 11px 30px;
+  margin: 0 auto 19px;
   color: #fff;
   border-radius: 3px;
   font-family: "PT sans", Arial, Helvetica, sans-serif;
@@ -2231,7 +2225,7 @@ input[type="radio"]:checked:disabled + label::after {
 
 .description-heading {
   margin: 0;
-  padding-top: 67px;
+  padding-top: 63px;
   padding-bottom: 25px;
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -2243,7 +2237,7 @@ input[type="radio"]:checked:disabled + label::after {
 
 .description-text {
   margin: 0;
-  padding-bottom: 70px;
+  padding-bottom: 66px;
   font-family: "PT sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 24px;
